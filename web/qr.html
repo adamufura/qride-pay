@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online School Bus Website</title>
+  <!-- Include Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="">
+  <style>
+    /* CSS styling for the canvas */
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Put the canvas behind the video */
+}
+
+  </style>
+  <script src="qr.js"></script>
+</head>
+<body>
+  <!-- Your website content goes here -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <h1>QR Code Scanner</h1>
+        <div id="scanner-container">
+          <video id="video" playsinline style="width: 100%; max-width: 640px;"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add a section to display the scanned QR code value -->
+<div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-success" role="alert" id="result-container">
+          Scanned QR Code: <span id="qr-result"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <h1>QR Code Scanner</h1>
+        <div id="scanner-container">
+          <video id="video" playsinline style="width: 100%; max-width: 640px;"></video>
+          <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <!-- Include Bootstrap 4 JS and your custom script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="path/to/your_custom_script.js"></script>
+  <!-- Include quaggaJS library -->
+<script src="https://cdn.jsdelivr.net/npm/quagga"></script>
+
+</body>
+</html>

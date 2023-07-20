@@ -1,0 +1,37 @@
+.card-header{
+    /* background: #f8d801; */
+}
+footer{
+    background: #000;
+    color: #f8d801;
+}
+.btn1{
+    background: #f8d801;
+    /* border: solid #000; */
+}
+.btn1:hover{
+    background: #fff;
+    color: #f8d801;
+    border: solid #f8d801;
+    
+}
+.present{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #000;
+    /* transform: skewY(+4deg); */
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+}
+     .price{
+         border-radius: 20px;
+     }
+     .amount_input{
+         width: 60px !important;
+     }
+     .create-btn{
+         width: 100%;
+     }
